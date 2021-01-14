@@ -85,6 +85,10 @@ namespace War3Net.CodeAnalysis.Jass.Tests
 
 
 
+            yield return new object?[] { string.Empty };
+
+
+
             #region InvocationExpression
             yield return new object?[] { @"foo()", new JassInvocationExpressionSyntax(@"foo") };
             yield return new object?[] { @"foo( bar )", new JassInvocationExpressionSyntax(@"foo", new JassVariableReferenceExpressionSyntax(@"bar")) };
